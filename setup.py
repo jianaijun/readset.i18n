@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 # import os
 
-version = '1.0.a2'
+version = '1.0.b1'
 
 setup(name='readset.i18n',
       version=version,
@@ -39,8 +39,6 @@ setup(name='readset.i18n',
           'zope.interface',
           'zope.component',
           'zope.publisher',
-          'plone.memoize',
-          #  > 3.0.5
           'plone.i18n',
       ],
       extras_require={
@@ -48,7 +46,6 @@ setup(name='readset.i18n',
               'zope.component [zcml]',
               'zope.configuration',
               'zope.browserresource',
-              #  > 3.0.5
               'plone.testing',
               'zope.testing',
           ]

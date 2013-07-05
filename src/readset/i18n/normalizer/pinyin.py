@@ -1,3 +1,5 @@
+# Chinese character mapping
+
 mapping = {
     13312 : "qiu", 13313 : "tian", 13316 : "kua", 13317 : "wu",
     13318 : "yin", 13324 : "si", 13334 : "ye", 13340 : "chou",

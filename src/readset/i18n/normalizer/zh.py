@@ -1,27 +1,11 @@
 # -*- coding: UTF-8 -*-
-import os.path
 
 from zope.interface import implementer
 
-from plone.memoize import ram
 from plone.i18n.normalizer.interfaces import INormalizer
 from plone.i18n.normalizer.base import baseNormalize
 #from plone.i18n.normalizer.base import mapUnicode
-
-
-# Chinese character mapping
-pinyin_path = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                           'pinyin.db')
-
-
-@ram.cache(lambda *args: args)
-def PinyinDict():
-    mapping = {}
-    for line in open(pinyin_path):
-        k, v = line.split('\t')
-        mapping[int(k, base=16)] = v.split()[0][:-1].lower()
-    return mapping
-mapping = PinyinDict()
+from readset.i18n.normalizer.pinyin import mapping
 
 
 def mapUnicode(text, mapping=()):
