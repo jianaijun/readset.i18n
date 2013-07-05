@@ -1,0 +1,12 @@
+*.py?
+.coverage
+.installed.cfg
+coverage.xml
+*.egg-info/
+bin/
+parts/
+src/*.egg-info
+develop-eggs/
+htmlcov/
+dist/
+eggs/
