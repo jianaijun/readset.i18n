@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 # import os
 
-version = '1.0.b1'
+version = '1.0.b2'
 
 setup(name='readset.i18n',
       version=version,

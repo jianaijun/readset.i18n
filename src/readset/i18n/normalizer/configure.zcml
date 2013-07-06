@@ -1,14 +1,7 @@
 <configure
     xmlns="http://namespaces.zope.org/zope">
 
-  <include package="plone.memoize" />
   <include package="plone.i18n" />
-  
-  <utility
-      name="zh"
-      provides="plone.i18n.normalizer.interfaces.IIDNormalizer"
-      component=".zh.normalizer"
-      permission="zope.Public" />
 
   <utility
       name="zh"
