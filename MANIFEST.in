@@ -1,6 +1,4 @@
+graft src/readset
+graft docs
 include *.rst
-
-recursive-include docs *
-recursive-include src *
-
-global-exclude *.pyc *.log *.db
+global-exclude *.pyc
